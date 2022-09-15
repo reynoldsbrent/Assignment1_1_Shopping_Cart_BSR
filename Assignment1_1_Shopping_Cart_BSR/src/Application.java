@@ -1,8 +1,8 @@
 
 /**
- * This application class can add items to a shopping cart and perform various operations on the bag such as
- * removing an item, removing the last item, counting how many items are in the cart, total price of the cart, price of an item, frequency of an item,
- * and printing the contents of the cart.
+ * This application class can add items to a shopping cart and perform various operations on the cart such as
+ * removing an item, removing the last item, counting how many items are in the cart, total price of the cart, price of an item,
+ *  frequency of an item, and printing the contents of the cart.
  * @author brentreynolds
  * @version 9/14/22 Fall 2022
  */
