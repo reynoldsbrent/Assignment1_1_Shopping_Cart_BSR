@@ -1,5 +1,8 @@
 
 /**
+ * This application class can add items to a shopping cart and perform various operations on the bag such as
+ * removing an item, removing the last item, counting how many items are in the cart, total price of the cart, price of an item, frequency of an item,
+ * and printing the contents of the cart.
  * @author brentreynolds
  * @version 9/14/22 Fall 2022
  */
@@ -75,8 +78,20 @@ public class Application {
 				
 				System.out.println("The total price of the shopping cart is: " + ft.format(aCart.getTotalPriceOfItems()));
 				
-				// Removes the specified item from the shopping cart
+				// Removes the cake item from the shopping cart
 				System.out.println("Has the cake been successfuly removed from the shopping cart? " + aCart.removeItem(cake));
+				
+				// Removes the cookie item from the shopping cart
+				System.out.println("Has the cookie been successfully removed from the shopping cart? :" + aCart.removeItem(cookie));
+				
+				//Removes the avocado item from the shopping cart
+				System.out.println("Has the avocodo been removed from the shopping cart? " + aCart.removeItem(avacado));
+				
+				//Removes the pastry item from the shopping cart
+				System.out.println("Has the pastry been removed from the shopping cart? " + aCart.removeItem(pastry));
+				
+				//Removes the donut item from the shopping cart
+				System.out.println("Has the donut been removed from the shopping cart? " + aCart.removeItem(donut));
 				
 				// Prints out contents of the cart
 				Object [] output2 = aCart.displayItems();
