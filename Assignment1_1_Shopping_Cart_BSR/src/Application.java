@@ -17,6 +17,12 @@ public class Application {
 				GroceryItems pizza = new GroceryItems("Pizza", 3);
 				GroceryItems cake = new GroceryItems("Cake", 4);
 				GroceryItems bread = new GroceryItems("Bread", 5);
+				GroceryItems cookie = new GroceryItems("Cookie", 6);
+				GroceryItems avacado = new GroceryItems("Avacado", 7);
+				GroceryItems pastry = new GroceryItems("Pastry", 8.5);
+				GroceryItems donut = new GroceryItems("Donut", 9.5);
+				GroceryItems muffin = new GroceryItems("Muffin", 10.2);
+				
 				
 				// Add these new grocery items to the newly created shopping cart
 				aCart.addItem(apple);
@@ -25,6 +31,12 @@ public class Application {
 				aCart.addItem(cake);
 				aCart.addItem(apple);
 				aCart.addItem(bread);
+				aCart.addItem(cookie);
+				aCart.addItem(avacado);
+				aCart.addItem(pastry);
+				aCart.addItem(donut);
+				aCart.addItem(muffin);
+				
 				
 				//System.out.println(aCart.getTotalPriceOfItems());
 				DecimalFormat ft = new DecimalFormat("####");
