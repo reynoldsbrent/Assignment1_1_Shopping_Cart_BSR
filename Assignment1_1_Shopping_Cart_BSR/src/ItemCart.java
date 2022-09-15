@@ -10,7 +10,7 @@ public class ItemCart<T> implements ShoppingCart{
 		private ResizableArrayBag cartBag = new ResizableArrayBag();
 		
 		/**
-		 * No arg constructor that creates a new ResizableArrayBag
+		 * No argument constructor that creates a new ResizableArrayBag
 		 */
 		ItemCart(){
 			cartBag = new ResizableArrayBag();
