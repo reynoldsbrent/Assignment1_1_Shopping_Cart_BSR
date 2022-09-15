@@ -82,7 +82,7 @@ public class Application {
 				System.out.println("Has the cake been successfuly removed from the shopping cart? " + aCart.removeItem(cake));
 				
 				// Removes the cookie item from the shopping cart
-				System.out.println("Has the cookie been successfully removed from the shopping cart? :" + aCart.removeItem(cookie));
+				System.out.println("Has the cookie been successfully removed from the shopping cart? " + aCart.removeItem(cookie));
 				
 				//Removes the avocado item from the shopping cart
 				System.out.println("Has the avocodo been removed from the shopping cart? " + aCart.removeItem(avacado));
