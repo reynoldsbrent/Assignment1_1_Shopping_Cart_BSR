@@ -4,7 +4,6 @@ public class ItemCart<T> implements ShoppingCart{
 	
 		private ResizableArrayBag cartBag = new ResizableArrayBag();
 		
-		
 		ItemCart(){
 			cartBag = new ResizableArrayBag();
 			
@@ -72,11 +71,18 @@ public class ItemCart<T> implements ShoppingCart{
 			// TODO Auto-generated method stub
 			return cartBag.toArray();
 		}
+		public Object [] copyToArray() {
+			return cartBag.toArray();
+		}
 
 		@Override
 		public double getTotalPriceOfItems() {
-			
-			return 0;
+			Object[] localCart = cartBag.toArray();
+			double sum = 0;
+		for(int i = 0; i < localCart.length; i++) {
+			sum += ((GroceryItems) localCart[i]).getIntPrice();
+		}
+			return sum;
 		}
 
 		@Override

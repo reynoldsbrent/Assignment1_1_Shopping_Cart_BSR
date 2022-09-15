@@ -1,3 +1,9 @@
+
+/**
+ * @author brentreynolds
+ * @version 9/14/22 Fall 2022
+ */
+import java.text.DecimalFormat;
 import java.util.Arrays;
 public class Application {
 
@@ -20,8 +26,17 @@ public class Application {
 				aCart.addItem(apple);
 				aCart.addItem(bread);
 				
+				//System.out.println(aCart.getTotalPriceOfItems());
+				DecimalFormat ft = new DecimalFormat("####");
+				ft = new DecimalFormat("$###,###.###");
+				
+				
+				// Prints out the total price of the shopping cart
+				System.out.println("The total price of the shopping cart is: " + ft.format(aCart.getTotalPriceOfItems()));
+				
 				// Prints out the price of an apple
-				System.out.println("The price of an apple is " + apple.getPrice());
+				//System.out.println("The price of an apple is " + apple.getPrice());
+				System.out.println("The price of an apple is " + ft.format(apple.getIntPrice()));
 				
 				// Copy these items from the shopping cart into an array of object
 				Object [] output = aCart.displayItems();
@@ -44,8 +59,13 @@ public class Application {
 				// Removes the last item form the shopping cart
 				System.out.println("The following item has been removed: " + aCart.removeItem());
 				
+				System.out.println("The total price of the shopping cart is: " + ft.format(aCart.getTotalPriceOfItems()));
+				
 				// Removes the specified item from the shopping cart
 				System.out.println("Has the cake been successfuly removed from the shopping cart? " + aCart.removeItem(cake));
+				
+				// Prints out the total price of the shopping cart
+				System.out.println("The total price of the shopping cart is: " + ft.format(aCart.getTotalPriceOfItems()));
 				
 				//Prints out the number of items in the cart
 				System.out.println("There are " + aCart.getNumberOfItems() + " items in the shopping cart");
@@ -65,6 +85,9 @@ public class Application {
 				
 				// Prints how many items are in the shopping cart
 				System.out.println("How many items are in the shopping cart? " + aCart.getNumberOfItems());
+				
+				// Prints out the total price of the shopping cart
+				System.out.println("The total price of the shopping cart is: " + ft.format(aCart.getTotalPriceOfItems()));
 
 	}
 
