@@ -125,7 +125,7 @@ public class ItemCart<T> implements ShoppingCart{
 			Object[] localCart = cartBag.toArray();
 			double sum = 0;
 		for(int i = 0; i < localCart.length; i++) {
-			sum += ((GroceryItems) localCart[i]).getIntPrice();
+			sum += ((GroceryItems) localCart[i]).getDoublePrice();
 		}
 			return sum;
 		}

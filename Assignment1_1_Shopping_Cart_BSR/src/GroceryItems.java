@@ -6,14 +6,14 @@
 public class GroceryItems implements Item {
 	private String description;
 	
-	private int price;
+	private double price;
 	private double totalPrice;
 	
 	/**
 	 * @param productDescription  the value of productDescription based on the calling method
 	 * @param productPrice        the value of productPrice based on the calling method
 	 */
-	public GroceryItems(String productDescription, int productPrice) {
+	public GroceryItems(String productDescription, double productPrice) {
 		description = productDescription;
 		price = productPrice;
 		totalPrice = totalPrice + price;
@@ -36,10 +36,10 @@ public class GroceryItems implements Item {
 	
 	
 	/**
-	 * @return  an int version of the item price
+	 * @return  price of the item
 	 */
-	public double getIntPrice() {
-		return this.price / 100 + this.price % 100;
+	public double getDoublePrice() {
+		return this.price;
 	}
 	
 	/**
@@ -54,7 +54,7 @@ public class GroceryItems implements Item {
 	 *
 	 */
 	public String toString() {
-		return description + "\t$" + price + "." + price ;
+		return description + "\t$" + price;
 	}
 	
 	/**
