@@ -1,5 +1,6 @@
 
 /**
+ * This class allows the user to get the price and name of the item
  * @author brentreynolds
  * @version 9/15/2022 Fall 2022
  */

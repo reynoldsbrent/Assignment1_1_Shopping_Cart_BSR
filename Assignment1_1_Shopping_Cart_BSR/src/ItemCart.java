@@ -1,5 +1,6 @@
 
 /**
+ * This class contains methods to allow the user to perform various operations on the shopping cart
  * @author brentreynolds
  * @version 9/15/2022
  * @param <T>
