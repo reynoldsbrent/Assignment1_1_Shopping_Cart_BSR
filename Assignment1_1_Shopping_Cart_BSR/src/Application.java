@@ -50,6 +50,8 @@ public class Application {
 				
 				// Print out the contents of each object in the array
 				
+				System.out.println("This is a list of the items in the shopping cart: ");
+				
 				for(int i = 0; i < output.length; i++) {
 					System.out.println(output[i]);
 				}
@@ -72,6 +74,7 @@ public class Application {
 				
 				// Prints out contents of the cart
 				Object [] output1 = aCart.displayItems();
+				System.out.println("This is a list of all the items in the shopping cart: ");
 				for(int i = 0; i < output1.length; i++) {
 					System.out.println(output1[i]);
 				}
@@ -95,6 +98,7 @@ public class Application {
 				
 				// Prints out contents of the cart
 				Object [] output2 = aCart.displayItems();
+				System.out.println("This is a list of all the items in the cart: ");
 				for(int i = 0; i < output2.length; i++) {
 					System.out.println(output2[i]);
 				}
